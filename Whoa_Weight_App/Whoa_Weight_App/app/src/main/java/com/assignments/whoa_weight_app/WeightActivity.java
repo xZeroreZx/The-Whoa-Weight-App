@@ -46,7 +46,7 @@ public class WeightActivity extends AppCompatActivity {
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         getSupportActionBar().hide();
-
+//Gets the current instance of the Firebase information determinate of the current user.
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
 
@@ -62,7 +62,7 @@ public class WeightActivity extends AppCompatActivity {
             }
         });
 
-
+//assists in adding information to the database and the user screen.
         addBtn = findViewById(R.id.addBtn);
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,7 +91,7 @@ public class WeightActivity extends AppCompatActivity {
         });
 
     }
-    private void sendUserData(){
+    private void sendUserData(){ //sends user data to the Firebase database.
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference myRef = firebaseDatabase.getReference(firebaseAuth.getUid());
         UserProfile userProfile= new UserProfile(userDate, userWeight, userGoal);
@@ -104,7 +104,7 @@ public class WeightActivity extends AppCompatActivity {
         iWeight= (EditText) findViewById(R.id.etWeight);
         iGoal = (EditText) findViewById(R.id.etGoal);
     }
-
+//getter to locate the current information for the user.
     private void getUserData(){
         DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
 
@@ -117,10 +117,7 @@ public class WeightActivity extends AppCompatActivity {
                 iGoal.setText(userProfile.getMyGoal());
                 currWeight = Integer.parseInt(iWeight.getText().toString());
                 toGoal = Integer.parseInt(iGoal.getText().toString());
-                // if(currWeight < toGoal){
-                    //toGoal = currWeight - toGoal;
-                    //TableRow row = new TableRow(iDate, currWeight, toGoal);
-                //}
+
 
             }
 

@@ -70,7 +70,7 @@ public class RegisterActivity extends AppCompatActivity {
         Name = (EditText) findViewById(R.id.editName);
 
     }
-
+//Validation method ensuring all fields are input before continuing.
     private Boolean validate(){
         Boolean result = false;
 
@@ -85,7 +85,7 @@ public class RegisterActivity extends AppCompatActivity {
         }
         return result;
     }
-
+//Informs the user that they will have an email for verifying their account sne tto the provided email address.
     private void sendEmailVerification(){
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
         if(firebaseUser != null){
@@ -98,7 +98,8 @@ public class RegisterActivity extends AppCompatActivity {
                         startActivity(new Intent (RegisterActivity.this, MainActivity.class));
 
                     }else{
-                        Toast.makeText(RegisterActivity.this, "Verification Email did not send", Toast.LENGTH_SHORT).show();
+                        //Else statement set to ensure that, in the event of the Firebase service being down, that the user will be aware to try again.
+                        Toast.makeText(RegisterActivity.this, "Verification Email did not send, please ensure all information is correct and try again.", Toast.LENGTH_SHORT).show();
                     }
                 }
             });

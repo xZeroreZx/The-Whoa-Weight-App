@@ -14,7 +14,7 @@ public class UserProfile {
     public UserProfile(){
 
     }
-
+//This activity is a placeholder to gather user profile information.
     public String getTodayDate() {
         return todayDate;
     }

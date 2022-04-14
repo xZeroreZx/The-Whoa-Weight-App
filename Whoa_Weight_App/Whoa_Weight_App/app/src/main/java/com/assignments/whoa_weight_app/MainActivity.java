@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        //Directs the application to the Register activity.
         signup_btn = findViewById(R.id.signup_btn);
         signup_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    //Sign in method to validate and setting text in case of failure.
     private void signIn (String username, String password) {
         firebaseAuth.signInWithEmailAndPassword(username, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
@@ -91,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
+    //Checks if the user has verified their email address for added security.
     private void checkEmailVerification(){
         FirebaseUser firebaseUser = firebaseAuth.getInstance().getCurrentUser();
         Boolean emailflag = firebaseUser.isEmailVerified();
@@ -101,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, WeightActivity.class));
         }else{
             Toast.makeText(MainActivity.this, "Please verify your Email", Toast.LENGTH_SHORT).show();
+            //Sign out so that the application doesn't crash when email verification fails.
             firebaseAuth.signOut();
         }
     }

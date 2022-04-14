@@ -25,14 +25,14 @@ public class PasswordActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_password);
-
+        //Contains the design to a portrait only orientation.
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         getSupportActionBar().hide();
 
         passwordEmail = (EditText)findViewById(R.id.etPasswordEmail);
         resetPassword = (Button)findViewById(R.id.resetBtn);
         firebaseAuth = FirebaseAuth.getInstance();
-
+        //This activities method for password reset through email.
         resetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
