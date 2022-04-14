@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "575961540560",
+    "firebase_url": "https://whoaweightapp-default-rtdb.firebaseio.com",
+    "project_id": "whoaweightapp",
+    "storage_bucket": "whoaweightapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575961540560:android:c5c1e749a2e2198fe6bbd5",
+        "android_client_info": {
+          "package_name": "com.assignments.whoa_weight_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575961540560-jf0477011147t4bd1s63qphprg2j4uuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnUNzQqwu5NuC7GOS6DC0mvaG7PTn9YD0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575961540560-jf0477011147t4bd1s63qphprg2j4uuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

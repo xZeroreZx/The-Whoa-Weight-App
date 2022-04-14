@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Whoa_Weight_App</string>
+    <string name="date">Date</string>
+    <string name="weight">Weight</string>
+    <string name="toGoal">To Goal</string>
+    <string name="database_view">database_view</string>
+    <string name="Goal">goal</string>
+    <string name="add_weight">add_weight</string>
+    <string name="weightnew">weightnew</string>
+    <string name="datenew">datenew</string>
+    <string name="add_new_weight">add_new_weight</string>
+    <string name="whoa_weight_registration">whoa_weight_registration</string>
+    <string name="enter_name">enter_name</string>
+    <string name="create_username">create_username</string>
+    <string name="create_password">create_password</string>
+    <string name="complete_registration">complete_reg</string>
+    <string name="welcome_to_whoa_weight">Welcome To Whoa Weight</string>
+    <string name="Input_image">Input Image</string>
+    <string name="Lock">Lock</string>
+    <string name="whoa_weight_console">Whoa Weight Console</string>
+    <string name="today_s_date">Today\'s Date</string>
+    <string name="current_weight">Current Weight</string>
+    <string name="your_data">Your Data</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="register_for_whoa_weight">Register For Whoa Weight</string>
+    <string name="name">Name</string>
+    <string name="enter_goal_weight">Enter Goal Weight</string>
+    <string name="log_out">Log Out</string>
+    <string name="submit">Submit</string>
+</resources>
